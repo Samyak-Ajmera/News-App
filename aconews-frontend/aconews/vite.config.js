@@ -1,12 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
     proxy: {
-      "/acowale": "http://localhost:5000/api/v1",
+      "/acowale": "https://aconews-0kew.onrender.com/api/v1",
     },
   },
   plugins: [react()],
-})
+});
